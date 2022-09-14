@@ -1,0 +1,21 @@
+1. git status = ve o que ta acontecendo
+
+2. git pull = puxa tudo que outras pessoas fizeram, quando eu vou de um lugar para o outro. Baixa as ultimas atualizações.
+
+3. git checkout -b = sai da branchmain e vai para uma outra criando ela, escrever o nome da sua nova branch (usar - ao inves de espaço no nome). Isso serve para usar uma branch de teste ao invés da original, pois se der merda vc não vai cagar a main direto.
+
+3.5 *trabalho - vai p VS code/Pycharm e faz o que for. Na IDE já vai ta tudo atualizado, só continuar.*
+
+4. git status = ve o que ta acontecendo, mudanças e outras paradas alteradas, inclusive o que vc acabou de fazer ou o que outras pessoas estão add
+
+5 .git add . = adiciona na fila do que vc quer subir (não mostra nenhuma msg)
+
+6. git commit -m "nome do que vc ta fazendo" (É o nome que vai aparecer para todo mundo ver o que sinaliza sua mudança no git site)
+
+7. git push origin nomedabranch = Empurra o conteúdo da branch que está trabalhando e manda para o github (Se eu estiver na main ele vai direto, mas não é uma boa prática)
+
+8. Fazendo o push automaticamente cria um pull request na main do github, pro time avaliar e aceitar. Vc pode ir adicionado várias paradas antes de aceitar tudo (ou quando n terminou o joberson).
+
+9. Só quando clica em "merge pull request" que vai pra main. 
+
+10. git checkout nomedabranch = muda de uma branch para outra (uma teste ou a main)
