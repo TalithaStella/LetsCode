@@ -66,14 +66,77 @@ assim o interpretador não vai se confundir com espaços e ou letra que pode ter
 
 Ex:"""
 
-cidade = input('Que cidade do Brasil é conhecida como "cidade maravilhosa"? ')
-cidade = cidade.strip()
-while cidade.lower() != 'rio de janeiro':
-    print('Tende novamente')
-    cidade = input('Que cidade do Brasil é conhecida como "cidade maravilhosa"? ')
+# cidade = input('Que cidade do Brasil é conhecida como "cidade maravilhosa"? ')
+# cidade = cidade.strip()
+# while cidade.lower() != 'rio de janeiro':
+#     print('Tende novamente')
+#     cidade = input('Que cidade do Brasil é conhecida como "cidade maravilhosa"? ')
 
 print('Certo!')
 
+print('Formatar escrita das strings')
+
+nome = 'Felipe'
+anos = 35
+filhos = 2
+print(f'{nome} tem {anos} anos e {filhos} filhos')  # Exemplo de texto.
+print('{} tem {} anos e {} filhos'.format(nome, anos, filhos))  # Outro tipo
+
+gasolina = 3.4765
+print('O preço da gasolina subiu e está em R$ {:.2f}'.format(gasolina))  # formatar os 0 na virgula
+print()
 
 
+print('Dicionário: Se armazena dentro de {}')  # Relaciona uma série de valores como se fosse uma lista, só que melhor
+
+cidade = {  # Estrutura mais flexivel
+    'nome': 'São paulo',
+    'estado': 'São paulo',
+    'area': 1521,
+    'populacao': 12.18,
+}
+print(type(cidade))
+print(cidade)
+
+cidade['Pais'] = 'Brasil'  # Só isso já add ao final do dicionário
+print(f'Adicionando ao final do Dic:', cidade)
+
+cidade['area'] = 1500  # Altera o valor especificado.
+print(f'Altera um valor que vc pode especificar:', cidade)
+
+# ELE ALTERA O VALOR DO DICIONÁRIO ORIGINAL!!!
+
+cidade2 = cidade
+cidade2['nome'] = 'Santos'
+print(f'Novo Dic:', cidade2)
+print(f' Também altera o original:', cidade)
+# O dic 1 e 2 agora tem o mesmo nome de cidade. Para mudar somente 1 dos Dics usar .copy()
+
+cidade3 = cidade.copy()
+cidade3['estado'] = 'Rio de Janeiro'
+print(f'Função .copy() permite fazer novo Dic e n altera valor do Dic original:', cidade3)
+print(f'Cidade original:', cidade)
+print(f'Alteração com .copy():', cidade3)
+print()
+
+
+novos_dados = {  # Posso adicionar um conjunto de novas informações
+    'populacao': 15.00,
+    'nome': 'São Paulo',
+    'fundacao': '25/01/1554'
+    }
+cidade.update(novos_dados)  # Dar update no novo Dic antes de chamar eles
+print(cidade)
+
+# Quando eu n tenho ctz de qual dado tem dentro do meu dic eu posso usa .get para procurar sem dar erro:
+
+print(cidade.get('prefeito'))
+# Procurando prefeito dentro de cidade e retorna valor "None" pq não tem isso especificado.
+
+print()
+print('Outras modificações: ')
+
+print(cidade.keys())  # Retorna uma lista com as chaves do Dic
+print(cidade.values())  # Retorna uma lista com os valores das chaves do Dic
+print(cidade.items())  # Retorna uma lista de tuplas com a chave e o valor junto
 
