@@ -10,7 +10,7 @@ Manipulação de arquivos - Tentando aqui no pycharm, mas se pa só funciona no 
 print('abrindo arquivo em modo "ler".')
 print()
 
-arquivo = open('leitura.txt', 'r')  # Para ler coloque 'r'
+arquivo = open('Documentos/leitura.txt', 'r')  # Para ler coloque 'r'
 
 texto = arquivo.read()
 print(texto)  # Uaaaaau
@@ -26,7 +26,7 @@ print()
 print('>>>>>>> Abrindo o arquivo usando While:')
 print()
 
-arquivo = open('leitura.txt', 'r')
+arquivo = open('Documentos/leitura.txt', 'r')
 linha = arquivo.readline()
 # Leitura de arquivo faz um 'cursor' entao se ele lê uma linha ele n volta pra onde ele estava, só segue em frente
 while linha != '':  # Enquanto linha dor diferente de valor vazio
@@ -41,7 +41,7 @@ print()
 print('>>>>>> Abrindo o arquivo usando For:')
 print()
 
-arquivo = open('leitura.txt', 'r')
+arquivo = open('Documentos/leitura.txt', 'r')
 for linha in arquivo:
     print(linha, end='')
 arquivo.close()
@@ -55,7 +55,7 @@ print()
 print('>>>>>> O python sabe que a gente tem que fechar o arquivo, entao escreva assim:')
 print()
 
-with open('leitura.txt', 'r') as arquivo:
+with open('Documentos/leitura.txt', 'r') as arquivo:
     texto = arquivo.read()
     print(texto)
 
@@ -66,22 +66,22 @@ print()
 print('>>>>>> Modo escrever em arquivo: ')
 print()
 
-with open('escrita.txt', 'w') as arquivo:  # Trocou o r por w
+with open('Documentos/escrita.txt', 'w') as arquivo:  # Trocou o r por w
 # ELE SOBREESCREVE TODO SEU ARQUIVO ORIGINAL - CUIDADO PRA N PERDER SEU ARQUIVO MÃE
     arquivo.write('LINHA QUE ADD USANDO PYTHON\n')
     arquivo.write('SEGUNDA LINHA QUE ADD USANDO PYTHON\n')
 
-with open('escrita.txt', 'r') as arquivo:
+with open('Documentos/escrita.txt', 'r') as arquivo:
     print(arquivo.read(), end='')
 
 print()
 print('>>>>>> Modo adicionar informação em arquivo: ')  # Trocou w por a
 print()
 
-with open('escrita.txt', 'a') as arquivo:  # Modo de abertura 'a'
+with open('Documentos/escrita.txt', 'a') as arquivo:  # Modo de abertura 'a'
     arquivo.write('TERCEIRA LINHA QUE ADD USANDO PYTHON\n')  # Esse n apaga tudo
 
-with open('escrita.txt', 'r') as arquivo:
+with open('Documentos/escrita.txt', 'r') as arquivo:
     print(arquivo.read(), end='')
 
 
@@ -90,10 +90,12 @@ print('>>>>>> Modo adicionar misto ')  # Trocou r+
 print()
 
 # Claramente n deu certo kkkk  - mas n sei o que aconteceu, pq erro n deu.
-with open('escrita.txt', 'r+') as arquivo:
+with open('Documentos/escrita.txt', 'r+') as arquivo:
     arquivo.write('TESTANDO R+ KKK \n')
     print(arquivo.read(), end='')
 
+print('_________________')
+print('Arquivos CSV')
 
 
 
