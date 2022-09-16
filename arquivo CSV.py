@@ -71,7 +71,3 @@ with open('Documentos/cadastro.csv', 'r') as cadastro_leitorCSV:  # as outronome
     csv_reader = csv.reader(cadastro_leitorCSV, delimiter=',')  # Chama como reader
     for linha in cadastro_leitorCSV:  # Para cada 'row' no leitor, mostrar o row:
         print(linha)
-
-
-
-
