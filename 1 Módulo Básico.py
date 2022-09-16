@@ -2,7 +2,7 @@
 
 
 Tuplas contempla alterações diferentes da lista. Considerada mais "rigida"
-Contém capacidade menor de armazenamento
+Contém capacidade menor de armazenamento-
 
 tupla = ('ex', 'ex2', 'ex3', 'ex4')
 tupla2 = 'ex', 'ex2', 'ex3', 'ex4'  - sem ()
