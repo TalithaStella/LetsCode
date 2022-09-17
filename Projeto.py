@@ -5,8 +5,7 @@ Projeto final: Pegar dados sobre COVID-19 de uma API pública e montar alguns da
 
 import requests as r  # n sei
 import PIL.Image
-# DateTime faz str se tornarem datas reais.
-import datetime as dt
+import datetime as dt  # DateTime faz str se tornarem datas reais.
 import csv
 from IPython.display import display
 from urllib.parse import quote
@@ -174,8 +173,6 @@ chart_content = get_api_chart(chart1)
 save_image('Documentos/Primeiro-gráfico.png', chart_content)
 display_image('Documentos/Primeiro-gráfico.png')
 
-# A imagem n aparece aqui no Pycharm por motivos que desconheço (AMORZINHO ME SALVAAA), mas funciona o jupyter.
-
 print('QRcode: ')
 
 
@@ -189,8 +186,9 @@ print('QRcode: ')
 
 def get_api_qrcode(link_qrcode):  # Pra onde vai ser redirecionado quando alguém pesquisar
 
-    # Pra URL não ficar complexa é importante fazer um 'parse' do nosso valor textual para um valor textual especial de URL
+    # Pra URL não ficar complexa é tem q fazer um 'parse' do nosso valor textual para um valor textual especial de URL
     # Pra isso tem que usar outra lib = url lib
+
     text = quote(link_qrcode)  # parsing do link para url
     quick_url_base = 'https://quickchart.io/qr'
     resp_quick = r.get(f'{quick_url_base}?text={text}')
