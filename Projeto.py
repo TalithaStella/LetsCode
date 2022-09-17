@@ -203,3 +203,6 @@ url_base = 'https://quickchart.io/chart'
 link = f'{url_base}?c={str(chart1)}'
 save_image('Documentos/qr-code.png', get_api_qrcode(link))
 display_image('Documentos/qr-code.png')
+
+
+# Fim do projeto. Tentar revisar
