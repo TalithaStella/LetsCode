@@ -20,6 +20,19 @@ importante que você informe qual era a palavra a ser descoberta.
 
 Para inspirar
 Para te inspirar de maneira você possa ter uma referência ao longo do desenvolvimento desta
-atividade,, assista a este vídeo: https:/ youtu.be/Oc_HCXAydxg
+atividade, assista a este vídeo: https://youtu.be/Oc_HCXAydxg
+
+
+* Coisas que n tinha no outro jogo e pode ter nesse:
+
+- Recurso maiusculo/minusculo.
+- Final do jogo: Deseja jogar novamente?
+
+
+* O que n sei fazer:
+
+- Sortear valores
+- Colocar emojis
+
 
 """
