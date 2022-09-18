@@ -34,9 +34,8 @@ atividade, assista a este vídeo: https://youtu.be/Oc_HCXAydxg
 - Sortear valores
 - Colocar emojis
 
-Nota mental: O git só faz um PR por vez. zzz
 
 """
 
-# Na moral pq n ta indo?
+
 
