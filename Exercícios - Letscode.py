@@ -7,14 +7,14 @@ Se o usuário informar o número 5, seu programa deverá imprimir: 1 2 3 4 5
 
 """
 
-# print('Números em ordem decrescente.')
-# pergunta = int(input('Digite um número inteiro: '))
-# contador = 0
-#
-# while contador < pergunta:
-#     resultado = pergunta - contador
-#     contador += 1
-#     print(resultado)
+print('Números em ordem decrescente.')
+pergunta = int(input('Digite um número inteiro: '))
+contador = 0
+
+while contador < pergunta:
+    resultado = pergunta - contador
+    contador += 1
+    print(resultado)
 
 # Como coloca as respostas em linha??
 
@@ -148,3 +148,14 @@ while True:
 print(f'Sua pontuação foi {resp}! ò-ó')
 
 print('\n______________________________\n')
+
+
+"""
+Faça uma função que recebe uma lista de números e retorna a soma dos elementos dessa lista.
+"""
+
+
+
+
+print('\n______________________________\n')
+
