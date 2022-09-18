@@ -34,7 +34,7 @@ atividade, assista a este vídeo: https://youtu.be/Oc_HCXAydxg
 - Sortear valores
 - Colocar emojis
 
-
+ué
 """
 
 
