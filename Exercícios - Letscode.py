@@ -154,8 +154,5 @@ print('\n______________________________\n')
 Faça uma função que recebe uma lista de números e retorna a soma dos elementos dessa lista.
 """
 
-
-
-
 print('\n______________________________\n')
 
